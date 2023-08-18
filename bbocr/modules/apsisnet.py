@@ -47,7 +47,7 @@ def padWordImage(img,pad_loc,pad_dim,pad_val):
             pad =np.ones((pad_height,w,3))*pad_val
             # pad
             img =np.concatenate([img,pad],axis=0)
-    return img.astype("uint8")    
+    return img.astype("uint8")
 #---------------------------------------------------------------
 def correctPadding(img,dim,pvalue=255):
     '''
